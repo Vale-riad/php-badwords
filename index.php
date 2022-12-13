@@ -1,8 +1,7 @@
 <?php 
 $badword = $_GET['badword'];
 $paragraph = "Il Signore degli Anelli narra della missione di nove Compagni,<br> la Compagnia dell'Anello, partiti per distruggere il più potente Anello del Potere, un'arma che renderebbe invincibile il suo malvagio creatore Sauron<br> se tornasse nelle sue mani, dandogli il potere di dominare tutta la Terra di Mezzo. ";
-$paragraph2 = str_replace($badword, "***", $paragraph2);
-
+$paragraph2 = str_replace($badword, "***", $paragraph);
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +11,7 @@ $paragraph2 = str_replace($badword, "***", $paragraph2);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> PHP Badwords</title>
-    
+    <h1>Intro PHP</h1>
     <p>
       <?php echo $paragraph; ?>
     </p>
